@@ -1,0 +1,80 @@
+#main
+  {position:relative;
+    height:400px;
+    width:100%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	background-color:black;
+   }
+  #face{position:relative;
+         height:200px;
+         width:200px;
+		 background-color:yellow;
+		 border-radius:50%;
+		}
+	
+	.eye1{position:absolute;
+         height:20px;
+         width:20px;
+		 background-color:black;
+		 border-radius:50%;
+		 top:30%;
+		 left:25%;
+		 border:2px solid blue;
+		 transition:1s;
+		 }
+	.eye1:hover 
+	{ transform:scale(2,2);
+	}
+	.eye2{position:absolute;
+         height:20px;
+         width:20px;
+		 background-color:black;
+		 border-radius:50%;
+		 top:30%;
+		 right:25%;
+		  transition:1s;
+		   border:2px solid blue;
+		 }
+	.eye2:hover
+	{ transform:scale(2,2);
+	}
+		 	 
+	.smile{position:absolute;
+         height:20px;
+         width:40px;
+		
+		 border-radius:50%;
+		 bottom:20%;
+		 right:41%;
+		  transition:1s;
+		  border-top: 10px solid red;
+		 }
+    #main:hover .smile
+	{ transform:scaleX(2);
+	   border-top: 10px solid yellow;
+	    border-bottom: 8px solid red;
+	}
+	
+	
+#main .footer
+{position:absolute;
+ bottom:0px;
+ width:100%;
+ background-color:black;
+ color:white;
+ text-align:center;
+ word-spacing:20px;
+ transition:3s;
+ }
+ 
+ #main:hover h1::before
+{content:"Don't  ";
+ color:yellow;
+}
+
+#main:hover h1::after
+{content:", Be happy ";
+ color:yellow;
+}
